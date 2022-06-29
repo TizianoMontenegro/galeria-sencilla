@@ -28,6 +28,13 @@ body{
     object-fit: cover;
     object-position: center;
 }
+.foto{
+    transition: transform .3s, filter .3s;
+}
+.foto:hover{
+    filter: opacity(.9);
+    transform: scale(1.05);
+}
 .foto:nth-child(4) {
     grid-row: span 2;
 }
@@ -52,13 +59,13 @@ body{
 }
 @media (max-width:630px) {
     body{
-        margin: 0;
+        margin: 5px;
     }
     .galery{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
         justify-content: center;
-        gap: 3px;
+        gap: 5px;
     }
 }
